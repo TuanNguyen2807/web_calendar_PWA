@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./images/calendar-32.png" type="image/x-icon">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        .account-top {
+            margin: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        a {
+            margin: 0 10px;
+        }
+    </style>
+    <title>Account</title>
+</head>
+
+<body>
+    <div class="container text-align-center display-flex">
+        <p><a class="dodgerblue" href="./calendar.html">Go back calendar</a></p>
+        <p><a class="dodgerblue" href="./login.html">Go to login page</a></p>
+        <p><a class="dodgerblue" href="/">Go to home page</a></p>
+    </div>
+    <div class="account-top ">
+        <h1>Account</h1>
+        <div class="display-flex" style="min-width: 20%;">
+            <button class="full-width-btn btn-red" id="logoutBtn">Logout</button>
+        </div>
+    </div>
+    <div class="background-color-white padding-16px">
+        <label for="username"><b>Username</b></label>
+        <input type="text" name="username" id="username" required readonly>
+
+        <label for="psw"><b>New Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required readonly>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required readonly>
+    </div>
+    <div class="display-flex justify-content-space-around">
+        <button class="full-width-btn btn-green" id="updateBtn">Update</button>
+        <button class="full-width-btn btn-red " id="deleteAccBtn">Delete</button>
+    </div>
+
+    <hr>
+    <h1>App Settings</h1>
+    <div class="display-flex" style="max-width: 30%;">
+        <button class="full-width-btn btn-green" id="installBtn">Install</button>
+        <button class="full-width-btn btn-green" id="updateAppBtn">Update</button>
+        <button class="full-width-btn btn-green" id="uninstallBtn">Uninstall</button>
+    </div>
+    <script type="module" src="./account.js"></script>
+</body>
+
+</html>

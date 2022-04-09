@@ -1,0 +1,24 @@
+:root {
+    --dark: #222222;
+    --gray50: #fffffe;
+    --gray20: #c1c1c1;
+    --gray10: #f1f3f4;
+    --gray30: #3c4043;
+    --blue10: #1a73e8;
+    --blue20: #039be5;
+    --blue40: #6495ed;
+    --blue30: #1967d2;
+    --font400: 400 0.875rem/1.25rem Roboto;
+    --font500: 500 0.875rem/1.25rem Roboto;
+}
+
+body {
+    font: var(--font400);
+    margin: 0;
+    color: var(--gray50);
+    background: var(--dark);
+}
+
+@media (prefers-color-scheme: dark) {
+    /* dark theme */
+}

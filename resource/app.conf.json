@@ -1,0 +1,19 @@
+{
+    "bind": "127.0.0.1",
+    "listen_port": 8080,
+    "log_enabled": true,
+    "log_destination": "cs",
+    "security": {
+        "ssl": false,
+        "cors": true,
+        "secret": "hehe",
+        "cert_file": "",
+        "key_file": ""
+    },
+    "database": {
+        "connection_string": "mongodb://calendar:r1jks3|9qGpO1vj@tuana9a.tech:27017/?authSource=calendar&ssl=true",
+        "read_limit": 20,
+        "batch_size": 250
+    },
+    "tokenSecret": "man-meo-dong-cun"
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="shortcut icon" href="./images/calendar-32.png" type="image/x-icon">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+        
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+    </style>
+    <title>Login</title>
+</head>
+
+<body>
+
+
+    <div class="background-color-white padding-16px">
+        <h1>Sign In</h1>
+        <p>Please fill in this form to sign in.</p>
+        <hr class="register-hr-box">
+
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Your Username" name="username" id="username" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+        <hr>
+        <button type="submit" class="full-width-btn btn-green" id="signInBtn">Sign In</button>
+    </div>
+
+    <div class="container text-align-center background-color-white-dark">
+        <p>Didn't have an account? <a class="dodgerblue" href="./register.html">Register</a>.</p>
+        <p>Or just go to  <a class="dodgerblue" href="./calendar.html">your calendar</a></p>
+    </div>
+
+    <script type="module" src="./login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+    "name": "calendar",
+    "version": "1.0.0",
+    "description": "Bâi tập lớn Công nghệ web",
+    "main": "main.js",
+    "scripts": {
+        "start": "node main.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@gitlab.com:soict-it4409/20211/nhom23/calendar.git"
+    },
+    "author": "Nhom23",
+    "license": "GPL-3.0",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cookie-parser": "^1.4.6",
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "jsonwebtoken": "^8.5.1",
+        "mongodb": "^4.1.3"
+    }
+}
